@@ -5,4 +5,8 @@ This repository contains Python implementations of various data structures and a
 ## Implemented Data Structures
 
 - **Binary Search Tree (BST)**
-- **Min and Max heaps**
+- **Heaps**
+  - Maximum Heap
+  - Minimum Heap
+- **Queues**
+  - Max Queue -> queue with getMax() in O(1)
