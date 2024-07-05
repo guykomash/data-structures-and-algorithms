@@ -58,12 +58,22 @@ class maxHeap:
             self.arr[i] = self.arr[maxHeap.parent(i)] 
             self.arr[maxHeap.parent(i)] = tmp
             i = maxHeap.parent(i)
+        return i
     
     def insert(self, key):
         self.arr.append(float("-inf"))
         self.size += 1
-        self.increaseKey(self.size - 1, key)
+        index = self.increaseKey(self.size - 1, key)
+        return index
     
+    def delete(self, key):
+        try:
+            index = self.arr.index(key)
+        except Exception as err:
+            print(f"delete: key={key} not found.")
+        self.increaseKey(index, float("-inf"))
+
+
     @staticmethod
     def heapsort(arr):
         '''Time Complexity O(n log n)'''
@@ -88,5 +98,9 @@ class maxHeap:
     
 if __name__ == "__main__":
     nums = [4,1,3,2,16,9,10,14,8,7]
-    sorted = maxHeap.heapsort(nums)
-    print(sorted)
+    h = maxHeap(nums)
+
+    h.delete(2)
+    print(h.arr)
+    h.insert(2)
+    print(h.arr)
