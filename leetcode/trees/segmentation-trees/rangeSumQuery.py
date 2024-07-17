@@ -141,7 +141,7 @@ class RangeSumQueryPFT:
     def buildTree(self, node, start, end):
         # print(f"buildTree = {node},{start},{end}")
         if start == end:
-            self.segTree[node] = nums[start]
+            self.segTree[node] = self.nums[start]
             return
         
         mid = start + (end - start ) // 2

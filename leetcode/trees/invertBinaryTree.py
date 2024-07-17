@@ -2,7 +2,7 @@
 226. Invert Binary Tree
 https://leetcode.com/problems/invert-binary-tree/
 '''
-from displayTree import display_tree
+from leetcode.trees.displayTree import display_tree
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val

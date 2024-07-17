@@ -8,7 +8,7 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
 '''
 
-from displayTree import display_tree
+from leetcode.trees.displayTree import display_tree
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
