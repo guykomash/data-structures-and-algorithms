@@ -59,6 +59,7 @@ def dayOfWeek(day, K):
 
 
 
+
 if __name__ == "__main__":
     print(dayOfWeek('Monday',3))
     print(dayOfWeek('Tuesday',101))

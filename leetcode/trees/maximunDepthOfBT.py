@@ -21,7 +21,7 @@ def maxDepth(root):
 
     left = maxDepth(root.left)
     right = maxDepth(root.right)
-
+    
     return max(left, right)  + 1
 
 
